@@ -1,0 +1,309 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  color: #FAFAFA;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+  display: flex;
+}
+#side-bar{
+  background-color: #121212;
+  position: fixed;
+  border-right: 1px solid rgb(126, 126, 120);
+  padding: 2.5rem 0rem 0.5rem 1.5rem;    
+  width: 18%;
+  height: 100vh;
+}
+#side-links{
+  list-style-type: none;
+  margin: 0;
+  padding: 1.3rem 0rem 0rem 0rem;
+}
+#side-links li{
+  font-size: 1rem;
+  padding: 1.5rem 0rem 1rem;
+}
+#side-links span{
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px 0px 0px 14px;
+}
+.side-img{
+  margin-bottom: -6px;
+}
+#post-section{
+  background-color: #1d1c1c;
+  padding-top: 1.5rem;
+  padding-left: 24rem;
+  display: flex;
+  width: 85rem;
+  height: 216rem;
+}
+#status{
+  display: flex;
+  gap: 0.8rem;
+  background-color: #121212;
+  max-width: 475px;
+  list-style-type: none;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgb(126, 126, 120);
+  border-radius: 10px;
+}
+#status li{
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+#status li img{
+  border: solid 1px transparent;
+  border-radius: 50%;
+  padding: 1px;
+  background-image: linear-gradient(to right, yellow, orangered 10%, purple);
+}
+#status li small{
+  align-self: center;
+  padding-top: 2px;
+}
+.next-card{  
+  border: none;
+  padding: 0px;
+  width: 22px;
+  height: 22px;
+  float: right;
+  position: absolute;
+  top: 73px;
+  right: 513px;
+}
+.next-card:hover{
+  cursor: pointer;
+}
+.forward{
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  opacity: 0.9;
+}
+#posts{
+  margin-top: 1rem;
+  border: 1px solid rgb(126, 126, 120);
+  border-radius: 10px;
+  background-color: #121212;
+  height: 50.5rem;
+  max-width: 475px;
+}
+.profile-picture{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.post-info{
+  display: flex;
+  padding: 13px;
+  gap: .7rem;
+  height: 3.8rem;
+  border-bottom: 1px solid rgb(126, 126, 120);
+  border-radius: 5px;
+}
+.post-title{
+  display: flex; 
+  flex-direction: column; 
+  gap: .2rem; 
+  flex-grow: 1;
+}
+.span1{
+  font-size: 14px;
+  font-weight: 600;
+  color: #FAFAFA; 
+}
+.profile-options{
+  padding-top: 5px;
+}
+small{
+  font-size: 12px;
+}
+small .span1{
+  word-spacing: 1.5px;
+}
+.post-section{
+  width: fit-content;
+  height: 30rem;
+}
+.pic-post{
+  width: 29.54rem;
+  height: 30rem;
+  object-fit: contain;
+}
+.comment-section{
+  padding: 0px 12px; 
+}
+.reactions{
+  display: flex;
+  margin: 4px -10px 0px -6px;
+}
+button{
+  background: none;
+  border: none;
+  padding: 8px;
+}
+button:hover{
+  cursor: pointer;
+}
+.liked-by{
+  display: block;
+  font-size: 14px;
+  margin: 0px 0px 6px;
+}
+.liked-by span{
+  font-weight: 600;
+}
+.fade{
+  color: #A8A8A8;
+  font-size: 14px;
+}
+.view-all{
+  padding-bottom: 5px;
+}
+a{
+  color: #E0F1FF;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+.flex-left{
+  margin-left: auto;
+}
+.read-comments{
+  display: flex;
+}
+.handle{
+  margin-right: 3px;
+}
+.shift-like{
+  margin-right: -6px;
+  margin-top: -4px;
+}
+.comment-height{
+  line-height: 14px;
+}
+.time-stamp{
+  margin-top: -10px;
+  padding-bottom: 12px;
+}
+.add-comment{
+  padding: 2px 6px;
+  border-top: 1px solid rgb(126, 126, 120);
+}
+.post-color{
+  color: #E0F1FF;
+  font-weight: 600;
+}
+input{
+  border: none;
+  margin: 4px 0px;
+  width: 80%;
+  padding: 3px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #FAFAFA;
+  font-size: 14px;
+}
+input:focus{
+  outline: none;
+}
+::placeholder{
+  color: #A8A8A8;
+  font-size: 14px;
+  opacity: 1;
+}
+.pic-border{
+  border: solid 1px transparent;
+  border-radius: 50%;
+  padding: 1px;
+  background-image: linear-gradient(to right, yellow, orangered 10%, purple);
+}
+#suggested-follow{
+  margin-left: 1.5rem;
+  height: 30rem;
+  padding: 55px 140px 0px 8px;
+  display: flex;
+  flex-direction: column;
+}
+.tagged-profile{
+  position: relative;
+  bottom: 39px;
+  left: 18px;
+}
+.my-profile{
+  border-radius: 50%;
+  width: 18%;
+}
+.follow-info{
+  display: flex;
+  gap: 15px;
+}
+.profile-name{
+  color: #FAFAFA;
+  font-size: 14px;
+  font-weight: 700;
+  word-spacing: 1.5px;
+}
+.switch{
+  color: #69a5eb;
+  font-size: 13px;
+  font-weight: 600;
+}
+.see-all{
+  display: flex;
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.remove-list{
+  list-style: none;
+  margin-left: -35px;
+}
+.remove-list li img{
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+}
+.remove-list li{
+  padding-bottom: 15px;
+}
+.recommend{
+  color: #A8A8A8;
+  font-size: 12px;
+}
+.recommend-name{
+  color: #FAFAFA;
+  font-size: 13px;
+  font-weight: 700;
+  word-spacing: 1.5px;
+}
+.footer{
+  margin: -20px 0px 0px -36px;
+}
+.footer ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.dot{
+  padding: 2px 3px 0px 3px;
+}
+
+
+
+
+
+
+
+  
+
+
